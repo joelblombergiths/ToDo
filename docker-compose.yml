@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   todo:
-    image: ${DOCKER_REGISTRY-}todo
+    image: cloud22.azurecr.io/joel/todo:latest
     build:
       context: .
       dockerfile: ToDo/Dockerfile
