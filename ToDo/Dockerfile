@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 #COPY ["ToDo/ToDo.csproj", "ToDo/"]
 #RUN dotnet restore "ToDo/ToDo.csproj"
-COPY ["ToDo.csproj", "/"]
+COPY ["ToDo.csproj", "."]
 RUN dotnet restore "ToDo.csproj"
 COPY . .
 #WORKDIR "/src/ToDo"
