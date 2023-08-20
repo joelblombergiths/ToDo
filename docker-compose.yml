@@ -8,7 +8,7 @@ services:
       dockerfile: ToDo/Dockerfile
     container_name: todo
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Username=postgres;Password=postgres;Database=ToDoDb;
     ports:
