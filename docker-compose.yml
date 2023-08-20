@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   todo:
-    image: joel/todo:latest
+    image: todo
     build:
       context: .
       dockerfile: ToDo/Dockerfile
