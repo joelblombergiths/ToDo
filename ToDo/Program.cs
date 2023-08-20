@@ -17,7 +17,6 @@ WebApplication app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
 
 app.MapGet("todo", (ToDoContext context) => context.ToDoItems.Any() ? Results.Ok(context.ToDoItems.ToList()) : Results.NoContent());
 
