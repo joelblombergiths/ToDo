@@ -2,13 +2,13 @@ version: '3.4'
 
 services:
   todo:
-    image: https://cloud22.azurecr.io/joel/todo:latest
+    image: todo
     build:
       context: .
       dockerfile: ToDo/Dockerfile
     container_name: todo
     environment:
-      #- ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
       - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Username=postgres;Password=postgres;Database=ToDoDb;
     ports:
